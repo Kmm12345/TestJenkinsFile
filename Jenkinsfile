@@ -7,5 +7,10 @@ pipeline {
                 powershell '.\\Powershell\\HelloWorld.ps1'
             }
         }
+        stage('Stage2') {
+            steps {
+                echo "Hello World"
+            }
+        }
     }
 }
